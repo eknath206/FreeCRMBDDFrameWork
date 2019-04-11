@@ -42,6 +42,15 @@ public class LoginStepDefinition {
 		driver.findElement(By.name("password")).sendKeys("eknathD");
 	}
 	
+	//another regular expression
+	//\"([^\"]*)\"
+	
+	@Then("^user enters \"(.*)\" and \"(.*)\"$")
+	public void user_enters_username1_and_password1(String username, String password){
+		driver.findElement(By.name("username")).sendKeys(username);
+		driver.findElement(By.name("password")).sendKeys(password);
+	}
+	
 	@Then("^user clicks on login button$")
 	public void user_clicks_on_login_button() throws InterruptedException {
 		WebElement loginButton = driver.findElement(By.xpath("//input[@value='Login']"));
@@ -90,6 +99,13 @@ public class LoginStepDefinition {
 	public void user_enters_first_name_last_name() {
 	    driver.findElement(By.id("first_name")).sendKeys("Amol");
 	    driver.findElement(By.id("surname")).sendKeys("Vaidya");
+	}
+	
+	@Then("^user enters \"([^\"]*)\" & \"([^\"]*)\" & \"([^\"]*)\"$")
+	public void user_enters(String firstname, String lastname, String position){
+		driver.findElement(By.id("first_name")).sendKeys(firstname);
+	    driver.findElement(By.id("surname")).sendKeys(lastname);
+	    driver.findElement(By.id("company_position")).sendKeys(position);
 	}
 	
 	@Then("^user clicks on Save button$")

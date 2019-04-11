@@ -48,42 +48,42 @@ formatter.match({
   "location": "LoginStepDefinition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 10839802459,
+  "duration": 40890911481,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 45115203,
+  "duration": 118751105,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_enters_username_and_password()"
 });
 formatter.result({
-  "duration": 1037313454,
+  "duration": 9277193055,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 7121045437,
+  "duration": 11150292039,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 8172096,
+  "duration": 141334876,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.close_browser()"
 });
 formatter.result({
-  "duration": 735873766,
+  "duration": 1322148968,
   "status": "passed"
 });
 formatter.scenario({
@@ -143,63 +143,63 @@ formatter.match({
   "location": "LoginStepDefinition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 8874980871,
+  "duration": 9957564266,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_enters_username_and_password()"
 });
 formatter.result({
-  "duration": 390982876,
+  "duration": 742346589,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 4180720226,
+  "duration": 14633827528,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 10989805,
+  "duration": 20945938,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_mouse_over_on_Contacts_link()"
 });
 formatter.result({
-  "duration": 173783188,
+  "duration": 1380826494,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_clicks_on_New_Contact_link()"
 });
 formatter.result({
-  "duration": 1745956761,
+  "duration": 17735680912,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_enters_first_name_last_name()"
 });
 formatter.result({
-  "duration": 486292895,
+  "duration": 2889843106,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.user_clicks_on_Save_button()"
 });
 formatter.result({
-  "duration": 3091426212,
+  "duration": 6159739585,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinition.close_browser()"
 });
 formatter.result({
-  "duration": 779042798,
+  "duration": 3119058874,
   "status": "passed"
 });
 });
