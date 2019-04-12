@@ -1,4 +1,4 @@
-Feature: Free CRM Login Feature
+Feature: Free CRM Login Feature 
 
 #Scenario: Free CRM Login Test Scenario
 #Given user is already on Login page
@@ -29,15 +29,15 @@ Feature: Free CRM Login Feature
 #Then close browser
 
 #With Examples keyword
-Scenario Outline: Free CRM Login Test Scenario
-Given user is already on Login page
-When title of login page is Free CRM
-Then user enters "<username>" and "<password>"
-Then user clicks on login button
-Then user is on home page
-Then close browser
-
-Examples:
-	 | username | password |
-	 | eknathD | eknathD |
-	 | naveenk| test@123 |
+Scenario Outline: Free CRM Login Test Scenario 
+	Given user is already on Login page 
+	When title of login page is Free CRM 
+	Then user enters "<username>" and "<password>" 
+	Then user clicks on login button 
+	Then user is on home page 
+	Then close browser 
+	
+	Examples: 
+		| username | password |
+		| eknathD | eknathD |
+		| naveenk| test@123 |

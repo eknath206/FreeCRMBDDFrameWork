@@ -1,4 +1,4 @@
-package stepDefinitions;
+/*package stepDefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -54,8 +54,8 @@ public class LoginStepDefinition {
 	@Then("^user clicks on login button$")
 	public void user_clicks_on_login_button() throws InterruptedException {
 		WebElement loginButton = driver.findElement(By.xpath("//input[@value='Login']"));
-/*		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click;", loginButton);*/
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click;", loginButton);
 		
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		boolean invisible = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("preloader")));
@@ -114,3 +114,4 @@ public class LoginStepDefinition {
 	}
 	
 }
+*/

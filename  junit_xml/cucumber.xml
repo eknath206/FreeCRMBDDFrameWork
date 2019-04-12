@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="96.288722">
-<testcase classname="Free CRM Create Contacts" name="Free CRM - Create new Contact scenario" time="60.477425">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="49.956459">
+<testcase classname="Deal data creation" name="Free CRM Create a new deal scenario" time="49.956459">
 <system-out><![CDATA[Given user is already on Login page.........................................passed
 When title of login page is Free CRM........................................passed
-Then user enters "eknathD" and "eknathD"....................................passed
+Then user enters username and password......................................passed
 Then user clicks on login button............................................passed
 Then user is on home page...................................................passed
-Then user mouse over on Contacts link.......................................passed
-Then user clicks on New Contact link........................................passed
-Then user enters "Amol" & "Vaidya" & "Test Lead"............................passed
-Then user clicks on Save button.............................................passed
-Then close browser..........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM Create Contacts" name="Free CRM - Create new Contact scenario 2" time="35.811297">
-<system-out><![CDATA[Given user is already on Login page.........................................passed
-When title of login page is Free CRM........................................passed
-Then user enters "eknathD" and "eknathD"....................................passed
-Then user clicks on login button............................................passed
-Then user is on home page...................................................passed
-Then user mouse over on Contacts link.......................................passed
-Then user clicks on New Contact link........................................passed
-Then user enters "Varsha" & "Palav" & "Manager".............................passed
+Then user mouse over on Deals link..........................................passed
+Then user clicks on New Deal link...........................................passed
+Then user enters deal details...............................................passed
 Then user clicks on Save button.............................................passed
 Then close browser..........................................................passed
 ]]></system-out>
