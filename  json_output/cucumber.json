@@ -1,172 +1,40 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Free CRM Create a new deal scenario",
+        "line": 72,
+        "name": "Close browser",
         "description": "",
-        "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+        "id": "free-crm-application-testing;close-browser",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 11497362633,
+              "duration": 118003953,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user is already on Login page",
+            "line": 73,
+            "name": "This is a close browser test case",
             "match": {
-              "location": "DealStepWithMapDefinition.user_already_on_login_page()"
+              "location": "TaggingStepDefinition.this_is_a_close_browser_test_case()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 13882584,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "title of login page is Free CRM",
-            "match": {
-              "location": "DealStepWithMapDefinition.title_of_login_page_is_free_CRM()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 507865451,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters username and password",
-            "match": {
-              "location": "DealStepWithMapDefinition.user_enters_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "usernameCol",
-                  "passwordCol"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "eknathD",
-                  "eknathD"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4233516174,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "DealStepWithMapDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 271797244,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user is on home page",
-            "match": {
-              "location": "DealStepWithMapDefinition.user_is_on_home_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2562766027,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user mouse over on Deals link",
-            "match": {
-              "location": "DealStepWithMapDefinition.user_mouse_over_on_Deals_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10733388174,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user enters deal details",
-            "match": {
-              "location": "DealStepWithMapDefinition.user_enters_deal_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "titleCol",
-                  "amountCol",
-                  "probabilityCol",
-                  "commissionCol"
-                ],
-                "line": 13
-              },
-              {
-                "cells": [
-                  "test deal1",
-                  "1000",
-                  "50",
-                  "10"
-                ],
-                "line": 14
-              },
-              {
-                "cells": [
-                  "test deal2",
-                  "2000",
-                  "60",
-                  "20"
-                ],
-                "line": 15
-              },
-              {
-                "cells": [
-                  "test deal3",
-                  "3000",
-                  "70",
-                  "30"
-                ],
-                "line": 16
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1120226031,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "close browser",
-            "match": {
-              "location": "DealStepWithMapDefinition.close_browser()"
-            },
-            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Deal data creation",
+    "name": "Free CRM Application Testing",
     "description": "",
-    "id": "deal-data-creation",
+    "id": "free-crm-application-testing",
     "keyword": "Feature",
-    "uri": "F:/eclipse-workspace/FreeCrmBDDFrameWork/src/main/java/Features/dealsmap.feature"
+    "uri": "F:/eclipse-workspace/FreeCrmBDDFrameWork/src/main/java/Features/tagging.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@FucntionalTest"
+      }
+    ]
   }
 ]
