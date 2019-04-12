@@ -1,6 +1,7 @@
-/*package stepDefinitions;
+package stepDefinitions;
 
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +18,7 @@ import cucumber.api.java.en.When;
 import junit.framework.Assert;
 
 @SuppressWarnings("deprecation")
-public class DealStepDefinition {
+public class DealStepWithMapDefinition {
 
 	WebDriver driver;
 
@@ -40,9 +41,10 @@ public class DealStepDefinition {
 
 	@Then("^user enters username and password$")
 	public void user_enters_username_and_password(DataTable credentials) {
-		List<List<String>> data = credentials.raw();
-		driver.findElement(By.name("username")).sendKeys(data.get(0).get(0));
-		driver.findElement(By.name("password")).sendKeys(data.get(0).get(1));
+		for (Map<String, String> data : credentials.asMaps(String.class, String.class)) {
+			driver.findElement(By.name("username")).sendKeys(data.get("usernameCol"));
+			driver.findElement(By.name("password")).sendKeys(data.get("passwordCol"));
+		}
 	}
 
 	@Then("^user clicks on login button$")
@@ -73,33 +75,43 @@ public class DealStepDefinition {
 
 		Actions action = new Actions(driver);
 		action.moveToElement(dealsLink).build().perform();
+		
+		WebElement newDealLink = driver.findElement(By.xpath("//a[@title='New Deal']"));
+		newDealLink.click();
 
 	}
 
-	@Then("^user clicks on New Deal link$")
+/*	@Then("^user clicks on New Deal link$")
 	public void user_clicks_on_New_Deal_link() {
 		WebElement newDealLink = driver.findElement(By.xpath("//a[@title='New Deal']"));
 		newDealLink.click();
-	}
+	}*/
 
 	@Then("^user enters deal details$")
 	public void user_enters_deal_details(DataTable dealData) {
-		List<List<String>> dealValues = dealData.raw();
-		driver.findElement(By.id("title")).sendKeys(dealValues.get(0).get(0));
-		driver.findElement(By.id("amount")).sendKeys(dealValues.get(0).get(1));
-		driver.findElement(By.id("probability")).sendKeys(dealValues.get(0).get(2));
-		driver.findElement(By.id("commission")).sendKeys(dealValues.get(0).get(3));
+		
+		for (Map<String, String> dealValues : dealData.asMaps(String.class, String.class)) {
+			driver.findElement(By.id("title")).sendKeys(dealValues.get("titleCol"));
+			driver.findElement(By.id("amount")).sendKeys(dealValues.get("amountCol"));
+			driver.findElement(By.id("probability")).sendKeys(dealValues.get("probabilityCol"));
+			driver.findElement(By.id("commission")).sendKeys(dealValues.get("commissionCol"));
+			
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			
+			WebElement dealsLink = driver.findElement(By.xpath("//a[@title='Deals']"));
+			Actions action = new Actions(driver);
+			action.moveToElement(dealsLink).build().perform();
+			
+			WebElement newDealLink = driver.findElement(By.xpath("//a[@title='New Deal']"));
+			newDealLink.click();
 
-	}
+		}
 
-	@Then("^user clicks on Save button$")
-	public void user_clicks_on_Save_button() {
-		driver.findElement(By.xpath("//input[@value='Save']")).click();
 	}
 
 	@Then("^close browser$")
 	public void close_browser() {
 		driver.quit();
 	}
+
 }
-*/

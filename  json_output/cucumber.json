@@ -12,141 +12,151 @@
         "steps": [
           {
             "result": {
-              "duration": 33197811600,
+              "duration": 11497362633,
               "status": "passed"
             },
             "line": 4,
             "name": "user is already on Login page",
             "match": {
-              "location": "DealStepDefinition.user_already_on_login_page()"
+              "location": "DealStepWithMapDefinition.user_already_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 117237660,
+              "duration": 13882584,
               "status": "passed"
             },
             "line": 5,
             "name": "title of login page is Free CRM",
             "match": {
-              "location": "DealStepDefinition.title_of_login_page_is_free_CRM()"
+              "location": "DealStepWithMapDefinition.title_of_login_page_is_free_CRM()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1263077323,
+              "duration": 507865451,
               "status": "passed"
             },
             "line": 6,
             "name": "user enters username and password",
             "match": {
-              "location": "DealStepDefinition.user_enters_username_and_password(DataTable)"
+              "location": "DealStepWithMapDefinition.user_enters_username_and_password(DataTable)"
             },
             "rows": [
+              {
+                "cells": [
+                  "usernameCol",
+                  "passwordCol"
+                ],
+                "line": 7
+              },
               {
                 "cells": [
                   "eknathD",
                   "eknathD"
                 ],
-                "line": 7
+                "line": 8
               }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 9236210998,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "DealStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8246037,
+              "duration": 4233516174,
               "status": "passed"
             },
             "line": 9,
-            "name": "user is on home page",
+            "name": "user clicks on login button",
             "match": {
-              "location": "DealStepDefinition.user_is_on_home_page()"
+              "location": "DealStepWithMapDefinition.user_clicks_on_login_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 851368234,
+              "duration": 271797244,
               "status": "passed"
             },
             "line": 10,
-            "name": "user mouse over on Deals link",
+            "name": "user is on home page",
             "match": {
-              "location": "DealStepDefinition.user_mouse_over_on_Deals_link()"
+              "location": "DealStepWithMapDefinition.user_is_on_home_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2149056726,
+              "duration": 2562766027,
               "status": "passed"
             },
             "line": 11,
-            "name": "user clicks on New Deal link",
+            "name": "user mouse over on Deals link",
             "match": {
-              "location": "DealStepDefinition.user_clicks_on_New_Deal_link()"
+              "location": "DealStepWithMapDefinition.user_mouse_over_on_Deals_link()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 816415730,
+              "duration": 10733388174,
               "status": "passed"
             },
             "line": 12,
             "name": "user enters deal details",
             "match": {
-              "location": "DealStepDefinition.user_enters_deal_details(DataTable)"
+              "location": "DealStepWithMapDefinition.user_enters_deal_details(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "test deal",
+                  "titleCol",
+                  "amountCol",
+                  "probabilityCol",
+                  "commissionCol"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "test deal1",
                   "1000",
                   "50",
                   "10"
                 ],
-                "line": 13
+                "line": 14
+              },
+              {
+                "cells": [
+                  "test deal2",
+                  "2000",
+                  "60",
+                  "20"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "test deal3",
+                  "3000",
+                  "70",
+                  "30"
+                ],
+                "line": 16
               }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1574025466,
+              "duration": 1120226031,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user clicks on Save button",
-            "match": {
-              "location": "DealStepDefinition.user_clicks_on_Save_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 743009215,
-              "status": "passed"
-            },
-            "line": 15,
+            "line": 17,
             "name": "close browser",
             "match": {
-              "location": "DealStepDefinition.close_browser()"
+              "location": "DealStepWithMapDefinition.close_browser()"
             },
             "keyword": "Then "
           }
@@ -157,6 +167,6 @@
     "description": "",
     "id": "deal-data-creation",
     "keyword": "Feature",
-    "uri": "F:/eclipse-workspace/FreeCrmBDDFrameWork/src/main/java/Features/deals.feature"
+    "uri": "F:/eclipse-workspace/FreeCrmBDDFrameWork/src/main/java/Features/dealsmap.feature"
   }
 ]
